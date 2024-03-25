@@ -1,0 +1,517 @@
+@keyframes Mega {
+    0% {
+      top: -60px;
+      animation-duration: 3s;
+      opacity: 0;
+      background: rgb(9, 42, 145);
+    }
+    50% {
+      background: rgb(215, 22, 235);
+      animation-duration: 3s;
+    }
+    100% {
+      top: 40px;
+      animation-duration: 3s;
+      opacity: 1;
+      background: linear-gradient(90deg, rgb(0, 48, 193) 0%, rgb(215, 22, 235) 100%);
+      background-size: 200% 200%;
+    }
+  }
+  @keyframes ring {
+    0% {
+      transform: translate(0);
+    }
+    50% {
+      transform: translate(5px);
+    }
+    100% {
+      transform: translate(0);
+    }
+  }
+  @keyframes looking {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+  @keyframes Bg-trans {
+    0% {
+      background: rgb(9, 42, 145);
+    }
+    50% {
+      background: rgb(215, 22, 235);
+    }
+    100% {
+      background: rgb(9, 42, 145);
+    }
+  }
+  @keyframes trans-color {
+    0% {
+      color: rgb(9, 42, 145);
+    }
+    50% {
+      color: rgb(215, 22, 235);
+    }
+    100% {
+      color: rgb(9, 42, 145);
+    }
+  }
+  @keyframes live-tx-shadow {
+    0% {
+      text-shadow: 0 0;
+    }
+    50% {
+      text-shadow: 1px 5px 10px rgb(215, 22, 235);
+    }
+    100% {
+      text-shadow: 0 0;
+    }
+  }
+  @keyframes live-bx-shadow {
+    0% {
+      box-shadow: 0 0;
+    }
+    50% {
+      box-shadow: 1px 5px 10px rgb(215, 22, 235);
+    }
+    100% {
+      box-shadow: 0 0;
+    }
+  }
+  @keyframes opac {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 100%;
+    }
+  }
+  @font-face {
+    font-family: "Minecraft";
+    src: url(../Fonts/Pixel/Minecraft.ttf);
+  }
+  .font-f-pixel {
+    font-family: "Minecraft";
+  }
+  
+  @font-face {
+    font-family: "MAKISUPA";
+    src: url(../Fonts/Pixel/MAKISUPA.TTF);
+  }
+  .font-f-lennon {
+    font-family: "MAKISUPA";
+  }
+  
+  @font-face {
+    font-family: "Utendo-Regular";
+    src: url(../Fonts/Pixel/Utendo-Regular.ttf);
+  }
+  .font-f-utendo {
+    font-family: "Utendo-Regular";
+  }
+  
+  .border--none {
+    border: none;
+  }
+  
+  .border--ra__10 {
+    border-radius: 10px;
+  }
+  
+  .border--ra__20 {
+    border-radius: 20px;
+  }
+  
+  .border--ra__30 {
+    border-radius: 30px;
+  }
+  
+  .border--ra__40 {
+    border-radius: 40px;
+  }
+  
+  .border-bot_2 {
+    border-bottom: 2px solid #7c7c7c;
+  }
+  
+  .white-color {
+    color: white;
+  }
+  
+  .black-color {
+    color: black;
+  }
+  
+  .d-in_block {
+    display: inline-block;
+  }
+  
+  .d-flex {
+    display: flex;
+  }
+  
+  .d-block {
+    display: block;
+  }
+  
+  .d-none {
+    display: none;
+  }
+  
+  .al-item_cen {
+    align-items: center;
+  }
+  
+  .justify-con_cen {
+    justify-content: center;
+  }
+  
+  .justify-con_even {
+    justify-content: space-evenly;
+  }
+  
+  .justify-con_around {
+    justify-content: space-around;
+  }
+  
+  .justify-con_bet {
+    justify-content: space-between;
+  }
+  
+  .flex-dir_col {
+    flex-direction: column;
+  }
+  
+  .flex-dir_row {
+    flex-direction: row;
+  }
+  
+  .per-cen {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .fon-s_10 {
+    font-size: 10px;
+  }
+  
+  .fon-s_15 {
+    font-size: 15px;
+  }
+  
+  .fon-s_20 {
+    font-size: 20px;
+  }
+  
+  .fon-s_30 {
+    font-size: 30px;
+  }
+  
+  .fon-s_40 {
+    font-size: 40px;
+  }
+  
+  .fon-w_600 {
+    font-weight: 600;
+  }
+  
+  .m-1rem {
+    margin: 1rem;
+  }
+  
+  .m-3rem {
+    margin: 3rem;
+  }
+  
+  .m-5rem {
+    margin: 5rem;
+  }
+  
+  .m-l-1rem {
+    margin-left: 1rem;
+  }
+  
+  .m-l-3rem {
+    margin-left: 3rem;
+  }
+  
+  .m-l-5rem {
+    margin-left: 5rem;
+  }
+  
+  .m-u-1rem {
+    margin-top: 1rem;
+  }
+  
+  .m-u-3rem {
+    margin-top: 3rem;
+  }
+  
+  .m-u-5rem {
+    margin-top: 5rem;
+  }
+  
+  .mx-auto {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .my-0 {
+    margin-top: 0px;
+    margin-bottom: 0px;
+  }
+  
+  .out-l {
+    outline: 2px solid #7c7c7c;
+  }
+  
+  .out-none {
+    outline: none;
+  }
+  
+  .over-hid {
+    overflow: hidden;
+  }
+  
+  .R-More__btn {
+    text-decoration: none;
+    color: inherit;
+  }
+  
+  .p-1rem {
+    padding: 1rem;
+  }
+  
+  .p-3rem {
+    padding: 3rem;
+  }
+  
+  .p-5rem {
+    padding: 5rem;
+  }
+  
+  .p-l-1rem {
+    padding-left: 1rem;
+  }
+  
+  .p-l-2rem {
+    padding-left: 3rem;
+  }
+  
+  .p-l-5rem {
+    padding-left: 5rem;
+  }
+  
+  .p-u-1rem {
+    padding-top: 1rem;
+  }
+  
+  .p-u-3rem {
+    padding-top: 3rem;
+  }
+  
+  .p-u-5rem {
+    padding-top: 5rem;
+  }
+  
+  .p-u-15rem {
+    padding-top: 15rem;
+  }
+  
+  .p--eg_th {
+    padding: 8px 32px;
+  }
+  
+  .pos-rel {
+    position: relative;
+  }
+  
+  .pos-abs {
+    position: absolute;
+  }
+  
+  .text-dec_none {
+    text-decoration: none;
+  }
+  
+  .text-al-cen {
+    text-align: center;
+  }
+  
+  * {
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+  }
+  
+  body {
+    margin: 0px auto;
+    background: linear-gradient(90deg, rgb(0, 11, 52) 0%, rgb(66, 0, 76) 100%);
+    max-width: 1920px;
+  }
+  
+  .log--body .log-box--container {
+    height: 100vh;
+    background: url(../Images/Slider-Box/Background/electro-main.gif);
+  }
+  .log--body .log-box--container .log--header .home--container {
+    right: 400px;
+    bottom: 300px;
+    background: rgba(31, 31, 31, 0.5607843137);
+    transition: 0.5;
+  }
+  .log--body .log-box--container .log--header .home--container > a:hover > i:hover {
+    color: rgb(215, 22, 235);
+    animation: trans-color 1s infinite;
+  }
+  .log--body .log-box--container .log--header .home--container:Hover {
+    background: black;
+    transition: 0.5;
+  }
+  .log--body .log-box--container .log-box--content {
+    background: rgba(255, 255, 255, 0.2);
+    -webkit-backdrop-filter: blur(15px);
+            backdrop-filter: blur(15px);
+    width: 35vw;
+    transition: 1s;
+    max-width: 1920px;
+  }
+  .log--body .log-box--container .log-box--content:hover {
+    animation: Bg-trans 3s infinite;
+    transition: 1s;
+  }
+  .log--body .log-box--container .log-box--content .plus--container {
+    top: 10px;
+    left: 10px;
+    transition: 2s;
+  }
+  .log--body .log-box--container .log-box--content .plus--container .sign-text--container {
+    animation: ring 1s infinite;
+  }
+  .log--body .log-box--container .log-box--content .plus--container:hover > p {
+    display: block;
+    top: 10px;
+    left: 10px;
+    transition: 2s;
+  }
+  .log--body .log-box--container .log-box--content .head--contianer {
+    padding-bottom: 1rem;
+  }
+  .log--body .log-box--container .log-box--content .input--box {
+    padding: 5px;
+  }
+  .log--body .log-box--container .log-box--content .input--box > .icon--container {
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  .log--body .log-box--container .log-box--content .input--box > .input--self {
+    width: 100%;
+    border: 2px solid #7c7c7c;
+    background: transparent;
+    padding: 20px 45px 20px 20px;
+  }
+  .log--body .log-box--container .log-box--content .input--box > .input--self::-moz-placeholder {
+    color: white;
+  }
+  .log--body .log-box--container .log-box--content .input--box > .input--self::placeholder {
+    color: white;
+  }
+  .log--body .log-box--container .log-box--content .rem-for--box {
+    justify-content: space-between;
+  }
+  .log--body .log-box--container .log-box--content .rem-for--box > a {
+    align-items: flex-end;
+  }
+  .log--body .log-box--container .log-box--content .rem-for--box > a:hover {
+    color: rgb(215, 22, 235);
+    text-decoration: underline;
+  }
+  .log--body .log-box--container .log-box--content .submit--container {
+    width: 100%;
+  }
+  .log--body .log-box--container .log-box--content .submit--container .log--btn {
+    width: 100%;
+    height: 45px;
+    cursor: pointer;
+    color: rgba(31, 31, 31, 0.5607843137);
+    background: white;
+  }
+  .log--body .log-box--container .log-box--content .register-link--container .register-text--container > .register--link {
+    color: rgb(215, 22, 235);
+  }
+  .log--body .log-box--container .log-box--content .register-link--container .register-text--container > .register--link:hover {
+    color: rgb(9, 42, 145);
+  }
+  
+  @media screen and (max-width: 576px) {
+    .log--body .log-box--container {
+      height: inherit;
+    }
+    .log--body .log-box--container .log-box--content {
+      width: -moz-fit-content;
+      width: fit-content;
+      padding: 4rem;
+      margin: 1rem;
+    }
+    .log--body .log-box--container .log-box--content:active {
+      animation: Bg-trans 3s infinite;
+      transition: 1s;
+    }
+    .log--body .log-box--container .log-box--content .plus--container:active > p {
+      display: block;
+      top: 10px;
+      left: 10px;
+      transition: 2s;
+    }
+    .log--body .log-box--container .log-box--content .rem-for--box:active {
+      color: rgb(215, 22, 235);
+      text-decoration: underline;
+    }
+    .log--body .log-box--container .log-box--content .register-link--container .register-text--container > .register--link:hover {
+      color: rgb(9, 42, 145);
+    }
+  }
+  @media screen and (max-width: 768px) and (min-width: 576px) {
+    .log--body .log-box--container {
+      height: inherit;
+    }
+    .log--body .log-box--container .log-box--content {
+      width: -moz-fit-content;
+      width: fit-content;
+      padding: 4rem;
+      margin: 1rem;
+    }
+  }
+  @media screen and (max-width: 992px) and (min-width: 768px) {
+    .log--body .log-box--container {
+      height: inherit;
+    }
+    .log--body .log-box--container .log-box--content {
+      width: 55%;
+      padding: 4rem;
+      margin: 1rem;
+    }
+  }
+  @media screen and (max-width: 1200px) and (min-width: 992px) {
+    .log--body .log-box--container {
+      height: inherit;
+    }
+    .log--body .log-box--container .log-box--content {
+      width: 55%;
+      padding: 4rem;
+      margin: 1rem;
+    }
+  }
+  @media screen and (max-width: 1440px) and (min-width: 1200px) {
+    .log--body .log-box--container {
+      height: inherit;
+    }
+    .log--body .log-box--container .log-box--content {
+      width: 55%;
+      padding: 4rem;
+      margin: 1rem;
+    }
+  }/*# sourceMappingURL=final.css.map */
