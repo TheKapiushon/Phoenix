@@ -1,0 +1,50 @@
+// Footer Sec
+
+.footer--container {
+
+    .footer-item--container {
+        background: $prime-color-gradient;
+
+        .footer-logo--container {
+            width: 50%;
+
+            &>img {
+                width: 40%;
+            }
+        }
+
+        .item-link--container {
+            justify-content: $justify-content-around;
+            @include d-flex__align-cen();
+            padding-bottom: 1rem;
+
+            .explain--container {
+                transition: .5s;
+
+                &:hover {
+                    transform: scale(1.03);
+                    transition: .5s;
+                }
+            }
+
+            .link--container {
+                width: 50%;
+
+                .footer-list--container {
+                    width: 40%;
+
+                    .footer--btn {
+                        transition: .5s;
+
+                        &:hover {
+                            transform: scale(1.05);
+                            text-shadow: 2px 2px $bg-black-1f-loud;
+                            box-shadow: 2px 2px $bg-black-1f-loud;
+                            transition: .5s;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
