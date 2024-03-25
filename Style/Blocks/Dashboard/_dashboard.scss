@@ -1,0 +1,136 @@
+// DashBoard
+
+.dash--body {
+    margin: 1.5% auto;
+    width: 80%;
+    background: $prime-color-gradient-low;
+
+    .dash--header {
+
+        .header--content {
+            justify-content: $justify-content-around;
+
+            .comp--container {
+                width: 25%;
+
+            }
+
+            .comp-img--container {
+
+                &>img {
+                    height: 50px;
+                }
+            }
+        }
+
+        .nav--container {
+            width: 45%;
+
+            .nav--content {
+
+                .nav-item--content {
+                    transition: .5s;
+
+                    &:hover {
+                        box-shadow: 2px 5px 10px $border-color-gary;
+                        transition: .5s;
+                        background: $low-aqua-color;
+                    }
+                }
+            }
+        }
+
+        .user--container {
+            width: 15%;
+            justify-content: space-evenly;
+
+        }
+    }
+
+    .dash--main {
+
+        .list--container {
+            width: 32%;
+            padding-left: 6rem;
+            padding-bottom: 6rem;
+
+            .list--content {
+
+                &>li {
+                    list-style-type: none;
+                }
+
+                &>li>ol {
+                    transition: .5s;
+                    padding: .5rem;
+                    width: 65%;
+
+                    &:hover {
+                        color: $prime-red-color;
+                        background: $prime-aqua-color;
+                        border-radius: 10px;
+                        transition: .5s;
+                        scale: 1.05;
+                    }
+                }
+            }
+        }
+
+        .main-dash--container {
+
+            .boxes--container {
+
+                .box--content {
+                    transition: .5s;
+
+                    &:hover {
+                        animation: Bg-trans 2s infinite;
+                        transition: .5s;
+                    }
+
+                    &>h3 {
+                        margin: 0;
+                    }
+
+                    border: 2px solid $border-color-gary;
+                    background: $prime-background-color-gradient;
+
+                    .box-btn--container {
+                        animation: ring 1s infinite;
+                        background: $low-red-color;
+                        transition: .5s;
+
+                        &:hover {
+                            background: $prime-aqua-color;
+                            color: $prime-red-color;
+                            scale: 1.05;
+                        }
+                    }
+                }
+            }
+        }
+
+        .last-buy--container {
+
+            .li--container {
+
+                .pur-content {
+                    width: 20%;
+                    margin-right: 5rem;
+                    margin-bottom: 2rem;
+                    padding-left: 2rem;
+                    padding-right: 2rem;
+                    transition: .5s;
+
+                    &:hover {
+                        backdrop-filter: $glass-box-backdrop-filter;
+                        background: $glass-box-background;
+                        border-radius: 10px;
+                        outline: $out-line-gray;
+                        transition: .5s;
+                    }
+                }
+            }
+        }
+    }
+}
