@@ -1,0 +1,117 @@
+@import "../Variables/variables";
+
+// Animations 🎭
+
+@keyframes Mega {
+    0% {
+        top: -60px;
+        animation-duration: 3s;
+        opacity: 0;
+        background: $prime-aqua-color;
+    }
+
+    50% {
+        background: $prime-red-color;
+        animation-duration: 3s;
+    }
+
+    100% {
+        top: 40px;
+        animation-duration: 3s;
+        opacity: 1;
+        background: $prime-color-gradient;
+        background-size: 200% 200%;
+    }
+}
+
+@keyframes ring {
+    0% {
+        transform: translate(0);
+    }
+
+    50% {
+        transform: translate(5px);
+    }
+
+    100% {
+        transform: translate(0);
+    }
+}
+
+@keyframes looking {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes Bg-trans {
+    0% {
+        background: $prime-aqua-color;
+
+    }
+
+    50% {
+        background: $prime-red-color;
+    }
+
+    100% {
+        background: $prime-aqua-color;
+    }
+}
+
+@keyframes trans-color {
+    0% {
+        color: $prime-aqua-color;
+
+    }
+
+    50% {
+        color: $prime-red-color;
+    }
+
+    100% {
+        color: $prime-aqua-color;
+    }
+}
+
+@keyframes live-tx-shadow {
+    0% {
+        text-shadow: 0 0;
+    }
+
+    50% {
+        text-shadow: 1px 5px 10px $prime-red-color;
+    }
+
+    100% {
+        text-shadow: 0 0;
+    }
+}
+
+@keyframes live-bx-shadow {
+    0% {
+        box-shadow: 0 0;
+    }
+
+    50% {
+        box-shadow: 1px 5px 10px $prime-red-color;
+    }
+
+    100% {
+        box-shadow: 0 0;
+    }
+}
+
+@keyframes opac {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 100%;
+    }
+}
