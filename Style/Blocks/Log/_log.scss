@@ -1,0 +1,124 @@
+// Log-in Page
+
+.log--body {
+
+    .log-box--container {
+        height: 100vh;
+        background: url(../Images/Slider-Box/Background/electro-main.gif);
+
+        .log--header {
+
+            .home--container {
+                right: 400px;
+                bottom: 300px;
+                background: $bg-black-1f-loud;
+                @include icon-shadow();
+                transition: .5;
+
+                &:Hover {
+                    background: $prime-black-color;
+                    transition: .5;
+                }
+            }
+        }
+
+        .log-box--content {
+            background: $glass-box-background;
+            backdrop-filter: $glass-box-backdrop-filter;
+            width: 35vw;
+            transition: 1s;
+            max-width: 1920px;
+
+            &:hover {
+                animation: Bg-trans 3s infinite;
+                transition: 1s;
+            }
+
+            .plus--container {
+                top: 10px;
+                left: 10px;
+                transition: 2s;
+
+                .sign-text--container {
+                    animation: ring 1s infinite;
+                }
+
+                &:hover>p {
+                    display: block;
+                    top: 10px;
+                    left: 10px;
+                    transition: 2s;
+                }
+            }
+
+            .head--contianer {
+                padding-bottom: 1rem;
+            }
+
+            .input--box {
+
+                padding: 5px;
+
+                &>.icon--container {
+                    right: 20px;
+                    top: 50%;
+                    transform: translateY(-50%);
+                }
+
+                &>.input--self {
+                    width: 100%;
+                    border: 2px solid $border-color-gary;
+                    background: transparent;
+                    padding: 20px 45px 20px 20px;
+
+                    &::placeholder {
+                        color: $prime-white-color;
+                    }
+                }
+            }
+
+            .rem-for--box {
+                justify-content: space-between;
+
+                &>a {
+                    align-items: flex-end;
+
+                    &:hover {
+                        color: $prime-red-color;
+                        text-decoration: underline;
+                    }
+                }
+            }
+
+            .submit--container {
+                width: 100%;
+
+                .log--btn {
+                    width: 100%;
+                    height: 45px;
+                    cursor: pointer;
+                    color: $bg-black-1f-loud;
+                    background: $prime-white-color;
+
+                    &>a {
+                        width: 100%;
+                    }
+                }
+            }
+
+            .register-link--container {
+
+                .register-text--container {
+
+                    &>.register--link {
+                        color: $prime-red-color;
+
+                        &:hover {
+                            color: $prime-aqua-color;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
