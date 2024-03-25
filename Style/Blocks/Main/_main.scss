@@ -1,0 +1,325 @@
+// Body Sec
+
+.web-body--container {
+
+    // Top Btn
+
+    .top-btn--container {
+
+        .top--btn {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            background: $prime-aqua-color;
+            left: 10px;
+            bottom: 10px;
+            position: fixed;
+            animation: looking 1s infinite;
+            transition: .5s;
+
+            &:hover {
+                background: $prime-red-color;
+                @include reflect-aqua();
+                transition: .5s;
+                animation: none;
+            }
+        }
+    }
+
+    // Slider
+
+    .cheap--container {
+        background: url(../Images/Slider-Box/Background/electro-main-low-opa.gif);
+        background-attachment: fixed;
+        height: 650px;
+
+        .slider--container {
+
+            color: $prime-white-color;
+            width: 60%;
+            height: 60%;
+            margin: 5% auto;
+
+            &>h1 {
+                border-bottom: 5px solid $prime-white-color;
+                margin-left: 35%;
+                width: 30%;
+            }
+
+            &>p {
+                backdrop-filter: $glass-box-backdrop-filter;
+                background: $bg-black-1f-loud;
+            }
+
+
+            .slider-content--container {
+
+                .img--box {
+
+                    &:hover>.overlay--container {
+                        @include overlay-hov();
+                    }
+
+                    .overlay--container {
+                        @include overlay();
+                        background: $bg-trans-to-red;
+
+                        .detail--box {
+                            width: 90%;
+
+                            .link--container {
+                                animation: ring infinite 1s;
+                            }
+
+                            .R-More__btn {
+                                @include R-More__btn();
+                                background: $low-aqua-color;
+
+                                &:hover {
+                                    @include R-More__btn-hov();
+                                    @include reflect-aqua();
+                                }
+                            }
+                        }
+
+                    }
+
+                    .img--container {
+
+                        &>img {
+                            width: 100%;
+                            // border-radius: 20px;
+                        }
+
+                    }
+                }
+            }
+        }
+    }
+
+    // Card
+
+    .card--container {
+
+        &>h2 {
+            @include border-bot();
+        }
+
+        &:hover>.card--flex__container {
+            transform: scale(1.02);
+            transition: 1s;
+            @include reflect-gray();
+            outline: $out-line-gray;
+        }
+
+        .card--flex__container {
+
+            @include al-cen__jus-around();
+            height: 70vh;
+            transition: 1s;
+            @include loud-bg();
+
+            .card-content--container {
+
+                width: 30%;
+
+                .card--box {
+
+                    transition: 1s;
+
+                    &:hover {
+                        transform: scale(1.05);
+                        transition: 1s;
+                    }
+
+                    &:hover>.card-overlay--container {
+                        @include overlay-hov();
+                    }
+
+                    .card-overlay--container {
+                        @include overlay();
+                        background: $bg-trans-to-aqua;
+                        backdrop-filter: blur(5px);
+
+                        .card-detail--box {
+                            width: 80%;
+
+                            .card-link--container {
+                                animation: ring infinite 1s;
+                            }
+
+                            .R-More__btn {
+                                @include R-More__btn();
+                                background: $low-red-color;
+
+                                &:hover {
+                                    @include R-More__btn-hov();
+                                    @include reflect-red();
+                                }
+                            }
+                        }
+                    }
+
+                    .card-img--container {
+
+                        &>img {
+                            width: 100%;
+                            height: 300px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    // Search Box
+
+    .search--container {
+        &>h2 {
+            @include border-bot();
+        }
+
+        .search-img--container {
+            background: url(../Images/Search-Box/HeadSpin.jpg);
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: 100vw;
+            height: 50vh;
+            width: 80vw;
+
+            .poster--container {
+                backdrop-filter: $glass-box-backdrop-filter;
+                background: $glass-box-background;
+                height: 100%;
+                opacity: 1;
+                transition: 1s;
+
+                &>.search--icon {
+                    animation: looking 1s infinite;
+                }
+            }
+
+            &:hover>.inp--container {
+                @include overlay-hov();
+            }
+
+            &:hover>.poster--container {
+                opacity: 0;
+                transition: 1s;
+            }
+
+            .inp--container {
+                height: 100%;
+                @include overlay();
+                background: $bg-trans-to-red;
+
+                .hov--container {
+
+                    .search-but--container {
+                        margin-bottom: 2%;
+                    }
+
+                    .search--but {
+                        background: $low-aqua-color;
+                        transition: 1s;
+
+                        &:hover {
+                            background: $low-aqua-color;
+                            transition: 1s;
+                            border-radius: 10px;
+                            color: $prime-white-color;
+                            @include reflect-aqua();
+                        }
+                    }
+
+                    &>input {
+                        background: $prime-color-gradient;
+                        color: $prime-white-color;
+                        font-size: 20px;
+                        transition: 1s;
+                        padding: 8px 32px;
+
+                        &:focus {
+                            background: $prime-background-color-gradient;
+                            transition: 1s;
+                        }
+
+                    }
+                }
+
+            }
+        }
+    }
+
+    // Tech Box
+
+    .tech-cards {
+
+        &>h2 {
+            @include border-bot();
+        }
+
+        &:hover>.tech-cards--container {
+            @include reflect-gray();
+            transform: scale(1.02);
+            transition: 1s;
+            outline: $out-line-gray;
+        }
+
+        .tech-cards--container {
+            @include loud-bg();
+            @include al-cen__jus-around();
+            height: 70vh;
+            transition: 1s;
+
+            .tech--card {
+                width: 45%;
+
+                .tech-img--container {
+                    transition: 1s;
+
+                    &:hover {
+                        transform: scale(1.05);
+                        transition: 1s;
+                    }
+
+                    &>img {
+                        width: 100%;
+                    }
+
+                    &:hover>.summary--container {
+                        @include overlay-hov();
+                        @include glassing();
+                    }
+
+                    .summary--container {
+                        @include overlay();
+
+                        .text--container {
+                            height: 100%;
+
+                            &>summary {
+                                height: 60%;
+                            }
+
+                            .tech-link--container {
+
+                                animation: ring 1s infinite;
+
+                                .R-More__btn {
+                                    @include R-More__btn();
+                                    background: $low-red-color;
+
+                                    &:hover {
+                                        @include R-More__btn-hov();
+                                        @include reflect-red();
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
