@@ -1,0 +1,776 @@
+// (BreakPoint) DashBoard 
+
+@media screen and (max-width: 576px) {
+    .dash--body {
+        width: 90%;
+        height: 500px;
+
+        .dash--header {
+
+            .header--content {
+
+                .comp--container {
+                    width: 15%;
+
+                    .comp-text--container {
+
+                        &>h1 {
+                            font-size: 100%;
+                        }
+                    }
+                }
+
+                .comp-img--container {
+
+                    &>img {
+                        height: 20px;
+                    }
+                }
+            }
+
+            .nav--container {
+                width: 45%;
+
+                .nav--content {
+                    font-size: 60%;
+
+                    .nav-item--content {
+                        transition: .5s;
+                        padding: 5px;
+
+                        &:active {
+                            box-shadow: 2px 5px 10px $border-color-gary;
+                            transition: .5s;
+                            background: $low-aqua-color;
+                        }
+                    }
+                }
+            }
+
+            .user--container {
+                width: 15%;
+                justify-content: space-evenly;
+                font-size: 60%;
+                padding: 5px;
+
+                .user-name--container {
+
+                    &>p {
+                        margin: 0;
+                    }
+                }
+            }
+        }
+
+        .dash--main {
+
+            .list--container {
+                padding-left: 3%;
+                font-size: 60%;
+
+                .list--content {
+
+                    &>li>ol {
+                        transition: .5s;
+                        padding: .5rem;
+                        width: 115px;
+
+                        &:active {
+                            color: $prime-red-color;
+                            background: $prime-aqua-color;
+                            border-radius: 10px;
+                            transition: .5s;
+                            scale: 1.05;
+                        }
+                    }
+                }
+            }
+
+            .main-dash--container {
+
+                .heading--container {
+
+                    &>h2 {
+                        font-size: 60%;
+                    }
+                }
+
+                .boxes--container {
+                    font-size: 60%;
+                    padding-bottom: 15%;
+
+                    .box--content {
+                        transition: .5s;
+                        padding: 2%;
+                        margin: 1%;
+
+                        &:active {
+                            animation: Bg-trans 2s infinite;
+                            transition: .5s;
+                        }
+
+                        .box-btn--container {
+                            padding: 10%;
+
+                            &:active {
+                                background: $prime-aqua-color;
+                                color: $prime-red-color;
+                                scale: 1.05;
+                            }
+                        }
+
+                        &>h3 {
+                            margin: 0;
+                            font-size: 100%;
+                        }
+
+                        border: 2px solid $border-color-gary;
+                        background: $prime-background-color-gradient;
+
+                        .box-btn--container {
+                            animation: ring 1s infinite;
+                            background: $low-red-color;
+                            transition: .5s;
+                        }
+                    }
+                }
+            }
+
+            .last-buy--container {
+                padding-left: 0px;
+
+                .head--contianer {
+
+                    &>h3 {
+                        font-size: 80%;
+                    }
+                }
+
+                .li--container {
+
+                    .pur-content {
+                        margin-right: 8%;
+                        padding-left: 35px;
+                        padding-right: 2rem;
+                        transition: 0.5s;
+                        font-size: 60%;
+
+                        &:focus {
+                            backdrop-filter: $glass-box-backdrop-filter;
+                            background: $glass-box-background;
+                            border-radius: 10px;
+                            outline: $out-line-gray;
+                            transition: .5s;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 768px) and (min-width: 576px) {
+    .dash--body {
+        width: 90%;
+        height: 500px;
+
+        .dash--header {
+
+            .header--content {
+
+                .comp--container {
+                    width: 15%;
+
+                    .comp-text--container {
+
+                        &>h1 {
+                            font-size: 100%;
+                        }
+                    }
+                }
+
+                .comp-img--container {
+
+                    &>img {
+                        height: 20px;
+                    }
+                }
+            }
+
+            .nav--container {
+                width: 45%;
+
+                .nav--content {
+                    font-size: 70%;
+
+                    .nav-item--content {
+                        transition: .5s;
+                        padding: 3%;
+
+                        &:active {
+                            box-shadow: 2px 5px 10px $border-color-gary;
+                            transition: .5s;
+                            background: $low-aqua-color;
+                        }
+                    }
+                }
+            }
+
+            .user--container {
+                width: 15%;
+                justify-content: space-evenly;
+                font-size: 60%;
+                padding: 2%;
+
+                .user-name--container {
+
+                    &>p {
+                        margin: 0;
+                    }
+                }
+            }
+        }
+
+        .dash--main {
+
+            .list--container {
+                padding-left: 3%;
+                font-size: 65%;
+
+                .list--content {
+
+                    &>li>ol {
+                        transition: .5s;
+                        padding: .5rem;
+                        width: 115px;
+                    }
+                }
+            }
+
+            .main-dash--container {
+
+                .heading--container {
+
+                    &>h2 {
+                        font-size: 60%;
+                    }
+                }
+
+                .boxes--container {
+                    font-size: 70%;
+                    padding-bottom: 15%;
+
+                    .box--content {
+                        transition: .5s;
+                        padding: 2%;
+                        margin: 1%;
+
+                        .box-btn--container {
+                            padding: 10%;
+                        }
+
+                        &>h3 {
+                            margin: 0;
+                            font-size: 100%;
+                        }
+
+                        border: 2px solid $border-color-gary;
+                        background: $prime-background-color-gradient;
+
+                        .box-btn--container {
+                            animation: ring 1s infinite;
+                            background: $low-red-color;
+                            transition: .5s;
+                        }
+                    }
+                }
+            }
+
+            .last-buy--container {
+                padding-left: 0px;
+
+                .head--contianer {
+
+                    &>h3 {
+                        font-size: 80%;
+                    }
+                }
+
+                .li--container {
+
+                    .pur-content {
+                        margin-right: 8%;
+                        padding-left: 35px;
+                        padding-right: 2rem;
+                        transition: 0.5s;
+                        font-size: 60%;
+
+                        &:focus {
+                            backdrop-filter: $glass-box-backdrop-filter;
+                            background: $glass-box-background;
+                            border-radius: 10px;
+                            outline: $out-line-gray;
+                            transition: .5s;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 992px) and (min-width: 768px) {
+    .dash--body {
+        width: 90%;
+        height: 620px;
+
+        .dash--header {
+
+            .header--content {
+
+                .comp--container {
+                    width: 15%;
+
+                    .comp-text--container {
+
+                        &>h1 {
+                            font-size: 100%;
+                        }
+                    }
+                }
+
+                .comp-img--container {
+
+                    &>img {
+                        height: 20px;
+                    }
+                }
+            }
+
+            .nav--container {
+                width: 45%;
+
+                .nav--content {
+                    font-size: 70%;
+
+                    .nav-item--content {
+                        transition: .5s;
+                        padding: 3%;
+
+                        &:active {
+                            box-shadow: 2px 5px 10px $border-color-gary;
+                            transition: .5s;
+                            background: $low-aqua-color;
+                        }
+                    }
+                }
+            }
+
+            .user--container {
+                width: 15%;
+                justify-content: space-evenly;
+                font-size: 60%;
+                padding: 2%;
+
+                .user-name--container {
+
+                    &>p {
+                        margin: 0;
+                    }
+                }
+            }
+        }
+
+        .dash--main {
+
+            .list--container {
+                padding-left: 10%;
+                font-size: 90%;
+
+                .list--content {
+
+                    &>li>ol {
+                        transition: .5s;
+                        padding: .5rem;
+                        width: 160px;
+                    }
+                }
+            }
+
+            .main-dash--container {
+
+                .heading--container {
+
+                    &>h2 {
+                        font-size: 80%;
+                    }
+                }
+
+                .boxes--container {
+                    font-size: 100%;
+                    padding-bottom: 15%;
+
+                    .box--content {
+                        transition: .5s;
+                        padding: 10%;
+                        margin: 2%;
+                        margin-right: 10%;
+                        font-size: 80%;
+
+                        .box-btn--container {
+                            padding: 10%;
+                        }
+
+                        &>h3 {
+                            margin: 0;
+                            font-size: 100%;
+                        }
+
+                        border: 2px solid $border-color-gary;
+                        background: $prime-background-color-gradient;
+
+                        .box-btn--container {
+                            animation: ring 1s infinite;
+                            background: $low-red-color;
+                            transition: .5s;
+                        }
+                    }
+                }
+            }
+
+            .last-buy--container {
+                padding-left: 0px;
+
+                .head--contianer {
+
+                    &>h3 {
+                        font-size: 80%;
+                    }
+                }
+
+                .li--container {
+
+                    .pur-content {
+                        margin-right: 40%;
+                        padding-left: 35px;
+                        padding-right: 2rem;
+                        transition: 0.5s;
+                        font-size: 60%;
+
+                        &:focus {
+                            backdrop-filter: $glass-box-backdrop-filter;
+                            background: $glass-box-background;
+                            border-radius: 10px;
+                            outline: $out-line-gray;
+                            transition: .5s;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1200px) and (min-width: 992px) {
+    .dash--body {
+        width: 90%;
+        height: 620px;
+
+        .dash--header {
+
+            .header--content {
+
+                .comp--container {
+                    width: 15%;
+
+                    .comp-text--container {
+
+                        &>h1 {
+                            font-size: 30px;
+                        }
+                    }
+                }
+
+                .comp-img--container {
+
+                    &>img {
+                        height: 40px;
+                    }
+                }
+            }
+
+            .nav--container {
+                width: 45%;
+
+                .nav--content {
+                    font-size: 90%;
+
+                    .nav-item--content {
+                        transition: .5s;
+                        padding: 3%;
+
+                        &:active {
+                            box-shadow: 2px 5px 10px $border-color-gary;
+                            transition: .5s;
+                            background: $low-aqua-color;
+                        }
+                    }
+                }
+            }
+
+            .user--container {
+                width: 15%;
+                justify-content: space-evenly;
+                font-size: 80%;
+                padding: 2%;
+
+                .user-name--container {
+
+                    &>p {
+                        margin: 0;
+                    }
+                }
+            }
+        }
+
+        .dash--main {
+
+            .list--container {
+                padding-left: 10%;
+                font-size: 90%;
+
+                .list--content {
+
+                    &>li>ol {
+                        transition: .5s;
+                        padding: .5rem;
+                        width: 160px;
+                    }
+                }
+            }
+
+            .main-dash--container {
+
+                .heading--container {
+
+                    &>h2 {
+                        font-size: 80%;
+                    }
+                }
+
+                .boxes--container {
+                    font-size: 100%;
+                    padding-bottom: 15%;
+
+                    .box--content {
+                        transition: .5s;
+                        padding: 10%;
+                        margin: 2%;
+                        margin-right: 10%;
+                        font-size: 80%;
+
+                        .box-btn--container {
+                            padding: 10%;
+                        }
+
+                        &>h3 {
+                            margin: 0;
+                            font-size: 100%;
+                        }
+
+                        border: 2px solid $border-color-gary;
+                        background: $prime-background-color-gradient;
+
+                        .box-btn--container {
+                            animation: ring 1s infinite;
+                            background: $low-red-color;
+                            transition: .5s;
+                        }
+                    }
+                }
+            }
+
+            .last-buy--container {
+                padding-left: 0px;
+
+                .head--contianer {
+
+                    &>h3 {
+                        font-size: 80%;
+                    }
+                }
+
+                .li--container {
+
+                    .pur-content {
+                        margin-right: 40%;
+                        padding-left: 35px;
+                        padding-right: 2rem;
+                        transition: 0.5s;
+                        font-size: 60%;
+
+                        &:focus {
+                            backdrop-filter: $glass-box-backdrop-filter;
+                            background: $glass-box-background;
+                            border-radius: 10px;
+                            outline: $out-line-gray;
+                            transition: .5s;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1440px) and (min-width: 1200px) {
+    .dash--body {
+        width: 90%;
+        height: 700px;
+
+        .dash--header {
+
+            .header--content {
+
+                .comp--container {
+                    width: 15%;
+
+                    .comp-text--container {
+
+                        &>h1 {
+                            font-size: 25px;
+                        }
+                    }
+                }
+
+                .comp-img--container {
+
+                    &>img {
+                        height: 20px;
+                    }
+                }
+            }
+
+            .nav--container {
+                width: 45%;
+
+                .nav--content {
+                    font-size: 80%;
+
+                    .nav-item--content {
+                        transition: .5s;
+                        padding: 3%;
+
+                        &:hover {
+                            box-shadow: 2px 5px 10px $border-color-gary;
+                            transition: .5s;
+                            background: $low-aqua-color;
+                        }
+                    }
+                }
+            }
+
+            .user--container {
+                width: 15%;
+                justify-content: space-evenly;
+                font-size: 80%;
+                padding: 2%;
+
+                .user-name--container {
+
+                    &>p {
+                        margin: 0;
+                    }
+                }
+            }
+        }
+
+        .dash--main {
+
+            .list--container {
+                padding-left: 10%;
+                font-size: 20px;
+
+                .list--content {
+
+                    &>li>ol {
+                        transition: .5s;
+                        padding: .5rem;
+                        width: 185px;
+                    }
+                }
+            }
+
+            .main-dash--container {
+
+                .heading--container {
+
+                    &>h2 {
+                        font-size: 80%;
+                    }
+                }
+
+                .boxes--container {
+                    font-size: 100%;
+                    padding-bottom: 15%;
+
+                    .box--content {
+                        transition: .5s;
+                        padding: 15%;
+                        margin: 2%;
+                        margin-right: 10%;
+                        font-size: 100%;
+
+                        .box-btn--container {
+                            padding: 10%;
+                        }
+
+                        &>h3 {
+                            margin: 0;
+                            font-size: 100%;
+                        }
+
+                        border: 2px solid $border-color-gary;
+                        background: $prime-background-color-gradient;
+
+                        .box-btn--container {
+                            animation: ring 1s infinite;
+                            background: $low-red-color;
+                            transition: .5s;
+                        }
+                    }
+                }
+            }
+
+            .last-buy--container {
+                padding-left: 0px;
+
+                .head--contianer {
+
+                    &>h3 {
+                        font-size: 80%;
+                    }
+                }
+
+                .li--container {
+
+                    .pur-content {
+                        margin-right: 50%;
+                        padding-left: 35px;
+                        padding-right: 2rem;
+                        transition: 0.5s;
+                        font-size: 60%;
+
+                        &:focus {
+                            backdrop-filter: $glass-box-backdrop-filter;
+                            background: $glass-box-background;
+                            border-radius: 10px;
+                            outline: $out-line-gray;
+                            transition: .5s;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
