@@ -1,0 +1,101 @@
+// Header Sec
+
+.header--container {
+    @include d-flex__align-cen();
+    animation: opac 1s 1;
+    justify-content: $justify-content-around;
+    height: 70px;
+    border-radius: 10px;
+    z-index: 10;
+    scale: 1;
+    transition: 1s;
+
+    &:hover {
+        box-shadow: 1px 2px 15px 5px $border-color-gary;
+        transition: 1s;
+        scale: 1.01;
+    }
+
+    .brand--container {
+        img {
+            height: 60px;
+        }
+
+        .brand--exp {
+            display: none;
+        }
+    }
+
+    .nav--container {
+
+        .nav--items {
+
+            .nav--btn-container {
+
+                &:hover>.mega--menu {
+                    display: block;
+                    transition: .5s;
+                    animation: Mega 1 1s;
+                    overflow: $overflow-hid;
+                    z-index: -1;
+                }
+
+                .mega--menu {
+                    display: none;
+                    transition: .5s;
+                    @include glassing();
+                    top: 40px;
+                    right: -40px;
+                    overflow: hidden;
+                    background: $prime-color-gradient;
+                    background-size: 200% 200%;
+                    filter: drop-shadow(50px 50px 30px black);
+
+                    &:hover {
+                        background: $prime-color-gradient;
+                        background-size: 100% 100%;
+                        transition: 1s;
+                    }
+
+                    &>a {
+                        color: $prime-white-color;
+                        align-items: baseline;
+                        transition: .5s;
+
+                        i {
+                            padding: 10px;
+                        }
+                    }
+
+                    &>a:hover {
+                        text-shadow: 3px 3px $prime-black-color;
+                        border-bottom: 3px solid $prime-black-color;
+                        border-radius: 10px;
+                        transform: rotate(360deg), translateY(10px);
+                        transition: .5s;
+                    }
+                }
+            }
+
+            .nav--items__btn {
+
+                color: $prime-white-color;
+                padding: $padding-btn-8-32;
+
+                &::before {
+                    @include nav-line();
+                    background: $prime-color-gradient;
+                }
+
+                &:hover::before {
+                    @include nav-line-hov();
+                }
+            }
+        }
+    }
+
+    .bars--container {
+        display: none;
+        color: $prime-white-color;
+    }
+}
