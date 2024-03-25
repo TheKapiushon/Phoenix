@@ -1,0 +1,113 @@
+// Product Page
+
+.prod--body {
+
+    .prod-content--container {
+
+        .prod-img--container {
+            background: url(../Images/Slider-Box/Background/electro-main-low-opa.gif);
+            background-attachment: fixed;
+
+            &>.prod-main--img {
+                width: 50%;
+            }
+        }
+
+        .prod-explain--container {
+            width: 80%;
+            @include glassing();
+            transition: .5s;
+            margin: 2% auto;
+
+            &:hover {
+                outline: $out-line-gray;
+                scale: 1.02;
+                transition: .5s;
+                @include reflect-gray();
+            }
+
+            &>h2 {
+                color: $prime-red-color;
+            }
+
+            &>h1 {
+                color: $prime-aqua-color;
+                animation: live-tx-shadow 1s infinite;
+            }
+
+            &>p {
+                border-bottom: 2px solid $prime-aqua-color;
+            }
+
+            .buy--container {
+                background: $low-aqua-color;
+                width: 10%;
+                transition: .5s;
+                animation: ring 1s infinite;
+
+                &:hover {
+                    @include reflect-red();
+                    background: $prime-aqua-color;
+                    transition: .5s;
+                    border-radius: 10px;
+                }
+            }
+        }
+    }
+
+    .suggested--container {
+
+        .sug-head--container {
+
+            &>h2 {
+                margin-left: 35%;
+                width: 30%;
+            }
+        }
+
+        .sug-content--container {
+            background: $bg-black-1f-loud;
+            width: 90%;
+
+            .sug-card--container {
+
+                &:hover>.overlay--content {
+                    @include overlay-hov();
+                }
+
+                .overlay--content {
+                    @include overlay();
+                    background: $bg-trans-to-red;
+                    backdrop-filter: blur(4px);
+                }
+
+                .sug-card-img--container {
+
+                    .sug--img {
+                        width: 400px;
+                        height: 300px;
+                    }
+                }
+
+                .sug-card-exp--container {
+
+                    .sug-btn--container {
+                        animation: ring infinite 1s;
+
+                        .sug--btn {
+                            background: $prime-red-color;
+                            transition: .5s;
+
+                            &:hover {
+                                background: $prime-aqua-color;
+                                @include reflect-aqua();
+                                border-radius: 10px;
+                                transition: .5s;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
