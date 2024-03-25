@@ -1,0 +1,31 @@
+// Color Var 🔴
+
+$prime-color-gradient: linear-gradient(90deg, rgb(0, 48, 193) 0%, rgba(215, 22, 235, 1) 100%);
+$prime-color-gradient-low: linear-gradient(90deg, rgb(44, 72, 157) 0%, rgb(159, 62, 170) 100%);
+$prime-background-color-gradient: linear-gradient(90deg, rgb(0, 11, 52) 0%, rgb(66, 0, 76) 100%);
+$prime-black-color: black;
+$prime-white-color: white;
+$prime-aqua-color: rgba(9, 42, 145, 1);
+$prime-red-color: rgba(215, 22, 235, 1);
+$low-aqua-color: rgba(85, 0, 255, 0.2);
+$low-red-color: rgba(247, 0, 255, 0.2);
+$glass-box-background: rgba(255, 255, 255, .2);
+$bg-trans-to-red: linear-gradient(to bottom, transparent, $prime-red-color);
+$bg-trans-to-aqua: linear-gradient(to bottom, transparent, $prime-aqua-color);
+$bg-black-1f-loud: #1f1f1f8f;
+$bg-transparent: transparent;
+$border-color-gary: #7c7c7c;
+
+// Flex Values (pefect centering) 🌌
+
+$d-flex: flex;
+$align-items-cen: center;
+$justify-content-cen: center;
+
+// Filter Block 📂
+
+$glass-box-backdrop-filter: blur(15px);
+$justify-content-around: space-around;
+$padding-btn-8-32: 8px 32px;
+$overflow-hid: hidden;
+$out-line-gray: 2px solid $border-color-gary;
