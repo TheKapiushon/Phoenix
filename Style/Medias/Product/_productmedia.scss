@@ -1,0 +1,162 @@
+// (BreakPoint) Product Page
+
+@media screen and (max-width: 576px) {
+    .prod--body {
+
+        .prod--content {
+
+            .prod-content--container {
+
+                .prod-explain--container {
+
+                    &:active {
+                        outline: $out-line-gray;
+                        scale: 1.02;
+                        transition: .5s;
+                        @include reflect-gray();
+                    }
+
+                    .buy--container {
+                        padding: 1%;
+
+                        &:active {
+                            @include reflect-red();
+                            background: $prime-aqua-color;
+                            transition: .5s;
+                            border-radius: 10px;
+                        }
+                    }
+                }
+            }
+
+            .suggested--container {
+
+                .sug-content--container {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    flex-direction: column;
+
+                    .sug-card--container {
+
+                        &:active>.overlay--content {
+                            @include overlay-hov();
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 768px) and (min-width: 576px) {
+    .prod--body {
+
+        .prod--content {
+
+            .prod-content--container {
+
+                .prod-explain--container {
+
+                    .buy--container {
+                        padding: 1%;
+                    }
+                }
+            }
+
+            .suggested--container {
+
+                .sug-content--container {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    flex-direction: column;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 992px) and (min-width: 768px) {
+    .prod--body {
+
+        .prod--content {
+
+            .prod-content--container {
+
+                .prod-explain--container {
+
+                    .buy--container {
+                        padding: 1%;
+                    }
+                }
+            }
+
+            .suggested--container {
+
+                .sug-content--container {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    flex-direction: column;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1200px) and (min-width: 992px) {
+    .prod--body {
+
+        .prod--content {
+
+            .prod-content--container {
+
+                .prod-explain--container {
+
+                    .buy--container {
+                        padding: 1%;
+                    }
+                }
+            }
+
+            .suggested--container {
+
+                .sug-content--container {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    flex-direction: column;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1440px) and (min-width: 1200px) {
+    .prod--body {
+
+        .prod--content {
+
+            .prod-content--container {
+
+                .prod-explain--container {
+
+                    .buy--container {
+                        padding: 1%;
+                    }
+                }
+            }
+
+            .suggested--container {
+
+                .sug-content--container {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    flex-direction: column;
+                }
+            }
+        }
+    }
+}
