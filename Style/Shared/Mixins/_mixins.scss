@@ -1,0 +1,106 @@
+// Mix 🔬
+
+@mixin d-flex__align-cen() {
+    display: flex;
+    align-items: center;
+}
+
+@mixin glassing() {
+    backdrop-filter: $glass-box-backdrop-filter;
+    background: $glass-box-background;
+}
+
+@mixin reflect-aqua() {
+    box-shadow: 2px 1px 15px 10px $prime-aqua-color;
+    background: $prime-red-color;
+    transition: 1s;
+}
+
+@mixin reflect-red() {
+    box-shadow: 2px 1px 15px 10px $prime-red-color;
+    background: $prime-aqua-color;
+    transition: 1s;
+}
+
+@mixin reflect-gray() {
+    box-shadow: 1px 2px 15px 5px $border-color-gary;
+    transition: 2s;
+}
+
+@mixin R-More__btn () {
+    transition: 1s;
+}
+
+@mixin R-More__btn-hov () {
+    border-radius: 10px;
+    transform: translate(0);
+    transition: 1s;
+}
+
+@mixin overlay() {
+    content: "";
+    top: 100%;
+    right: 0;
+    width: 100%;
+    height: 0%;
+    z-index: -1;
+    transition: 1s;
+    opacity: 0;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+@mixin overlay-hov() {
+    // Hover overlay
+    top: 0;
+    right: 0;
+    height: 100%;
+    z-index: 1;
+    opacity: 1;
+    transition: 1s;
+}
+
+@mixin loud-bg() {
+    background: $bg-black-1f-loud;
+    backdrop-filter: $glass-box-backdrop-filter;
+}
+
+@mixin al-cen__jus-around() {
+    align-items: $align-items-cen;
+    justify-content: $justify-content-around;
+}
+
+@mixin border-bot() {
+    border-bottom: 1px solid $prime-white-color;
+    margin-left: 35%;
+    width: 30%;
+}
+
+@mixin icon-shadow() {
+    &>a:hover>i:hover {
+        color: $prime-red-color;
+        animation: trans-color 1s infinite;
+    }
+}
+
+@mixin nav-line() {
+    content: "";
+    // background: $prime-color-gradient;
+    display: inline-block;
+    width: 100%;
+    height: 3px;
+    position: absolute;
+    bottom: -100%;
+    left: 0;
+    transition: .5s;
+}
+
+@mixin nav-line-hov() {
+    bottom: 0;
+    transition: .5s;
+}
+
+@mixin background-reflect() {
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
